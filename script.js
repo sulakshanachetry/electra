@@ -7,3 +7,16 @@
         navbar.style.backgroundColor='transparent';
     }
  }
+
+
+ let answers=document.querySelectorAll(".box-item");
+ answers.forEach((event)=>{
+    event.addEventListener('click',()=>{
+       if(event.classList.contains("active")){
+          event.classList.remove("active");
+       }
+       else{
+          event.classList.add("active");
+       }
+    })
+ })
